@@ -749,6 +749,10 @@
 
      /* global */
 
+     body {
+         overflow-x: hidden;
+     }
+
      .container {
          max-width: 338px;
          padding-left: 32px;
@@ -1021,7 +1025,7 @@
      }
 
      .header__cross--visible {
-        rotate: 45deg;
+         rotate: 45deg;
      }
 
      .header-bottom__play-title {
@@ -1402,9 +1406,18 @@
      }
 
      .playlist__btn-360 {
-         height: 34px;
+         width: 160%;
+         height: 53px;
          display: flex;
+         overflow-x: scroll;
+         padding-top: 2px;
+         padding-left: 2px;
+         padding-bottom: 2px;
      }
+
+     .playlist__btn-360::-webkit-scrollbar {
+        width: 0;
+      }
 
      .playlist__item-360 {
          margin-right: 21px;
@@ -1417,6 +1430,20 @@
          outline: 2px solid var(--Electric-Violet);
          transition: color 0.3s ease-in-out, outline 0.3s ease-in-out, background 0.3s ease-in-out;
          border-radius: 77px;
+     }
+
+     .playlist__item-360:hover {
+         color: var(--White);
+         background: var(--Electric-Violet);
+     }
+
+     .playlist__item-360:focus {
+         background: var(--Melrose);
+     }
+
+     .playlist__item-360:focus {
+         outline: 2px solid var(--Daisy-Bush);
+         background: var(--Daisy-Bush);
      }
 
      .playlist__right {
