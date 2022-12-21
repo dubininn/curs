@@ -2555,19 +2555,28 @@
                     </div>
                 </div>
                 <form action="#" class="about__form flex">
-                    <textarea placeholder="Что скажете?" name="What" id="What" cols="87" rows="6" class="about__what text"
+                    <label class="about__label-rev">
+                        <textarea placeholder="Что скажете?" name="What" id="What" cols="87" rows="6" class="about__what text"
                         data-validate-field="text"></textarea>
-                    <input placeholder="Имя" type="text" class="about__input name" data-validate-field="name">
-                    <input placeholder="Email" type="email" class="about__input mail" data-validate-field="email">
+                    </label>
+                    <label class="about__label-rev">
+                        <input placeholder="Имя" type="text" class="about__input name" data-validate-field="name">
+                    </label>
+                    <label class="about__label-rev">
+                        <input placeholder="Email" type="email" class="about__input mail" data-validate-field="email">
+                    </label>
+                    
                     <button class="about__btn form__btn btn btn-primary">
                         Отправить
                     </button>
-                <label for="void" class="about__label">
-                    <input type="checkbox" name="void" id="void" class="about__checkbox checkbox" data-validate-field="checkbox">
-                    <span></span>
-                    Согласен на&nbsp;обработку персональных данных
-                </label>
-            </form>
+                    <div class="about__label-rev about__hack">
+                        <label for="void" class="about__label">
+                            <input type="checkbox" name="void" id="void" class="about__checkbox checkbox" data-validate-field="checkbox">
+                            <span></span>
+                            Согласен на&nbsp;обработку персональных данных
+                        </label>
+                    </div>
+                 </form>
             </div>
         </section>
     </main>

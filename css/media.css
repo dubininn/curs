@@ -341,7 +341,17 @@
 
  }
 
+ @media (max-width: 970px) {
+    .about__swiper {
+        width: 90%;
+    }
+ }
+
  @media (max-width: 852px) {
+
+    .about__swiper {
+        width: 100%;
+    }
 
      .playlist__right-item:not(:nth-child(2n)) {
          margin-right: 30px;
@@ -1406,7 +1416,7 @@
      }
 
      .playlist__btn-360 {
-         width: 160%;
+         width: 143%;
          height: 53px;
          display: flex;
          overflow-x: scroll;
@@ -1646,6 +1656,24 @@
          font-weight: 500;
          font-size: 9px;
          line-height: 9px;
+     }
+
+     .about__label-rev {
+        width: 100%;
+     }
+
+     .about__label-rev:nth-child(2) {
+        width: 100%;
+        margin-right: 0;
+     }
+
+     .about__label-rev:nth-child(3) {
+        width: 100%;
+     }
+
+     .just-validate-error-label {
+        padding-top: 0;
+        margin-left: 20px;
      }
 
      /* footer */
