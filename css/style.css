@@ -488,6 +488,7 @@ header-bottom__container {
 }
 
 .modal__enter {
+    rotate: 180deg;
     position: relative;
     padding-top: 60px;
     padding-left: 60px;
@@ -2179,6 +2180,10 @@ header-bottom__container {
 .about__hack {
     flex-direction: column-reverse;
     border: none;
+}
+
+.about__hack .just-validate-error-label {
+    top: -25px
 }
 
 .about__checkbox {
