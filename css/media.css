@@ -868,7 +868,7 @@
      }
 
      .header-top__nav {
-        position: relative;
+         position: relative;
          max-height: 392px;
          max-width: 320px;
          padding-left: 0;
@@ -1062,6 +1062,10 @@
          color: var(--Electric-Violet);
      }
 
+     .header__form-search--visible {
+         width: 190px;
+     }
+
      /* hero */
 
      .hero__container {
@@ -1124,6 +1128,10 @@
          display: none;
      }
 
+     .podcasts__item--visible:nth-child(n + 5) {
+         display: flex;
+     }
+
      .podcasts__item:first-child {
          margin-top: 19px;
      }
@@ -1177,13 +1185,18 @@
      }
 
      .podcasts__more {
-         margin-top: 31px;
+         margin-top: 0;
          padding: 15px 28px;
          font-style: normal;
          font-weight: 500;
          font-size: 16px;
          line-height: 16px;
      }
+
+     .podcasts__item {
+         width: 93.5%;
+     }
+
 
      /* broadcasts */
 
@@ -1219,10 +1232,18 @@
      .broadcasts__item {
          display: flex;
          flex-direction: column;
-         justify-content: space-between;
-         width: 44.2%;
+         justify-content: flex-start;
+         width: 42%;
          padding-bottom: 11px;
-         height: 33.3%;
+         height: 31%;
+     }
+
+     .broadcasts__item-bottom {
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         padding-left: 16px;
      }
 
      .broadcasts__right {
@@ -1230,8 +1251,8 @@
      }
 
      .broadcasts__item-title {
-         margin-top: 9px;
-         margin-left: 10px;
+         margin-top: 0;
+         margin-left: 0;
          font-style: normal;
          font-weight: 500;
          font-size: 12px;
@@ -1239,7 +1260,8 @@
      }
 
      .broadcasts__item-date {
-         margin-left: 9px;
+         margin-left: 0;
+         margin-bottom: 0;
          margin-top: 5px;
          font-style: normal;
          font-weight: 400;
@@ -1249,7 +1271,7 @@
 
      .broadcasts__more {
          margin-top: auto;
-         margin-left: 10px;
+         margin-left: 0;
          font-style: italic;
          font-weight: 400;
          font-size: 12px;
@@ -1328,7 +1350,11 @@
 
      .guest__bottom-left {
          margin-top: 29px;
-         margin-bottom: 436px;
+         margin-bottom: 0;
+     }
+
+     .guest__bottom__right {
+         padding-top: 30px;
      }
 
      .ac .ac-header {
@@ -1417,9 +1443,9 @@
      }
 
      .playlist__btn-360 {
-         left: -120px;
+         left: -30px;
          position: relative;
-         width: 195%;
+         width: 100vh;
          height: 53px;
          display: flex;
          overflow-x: scroll;
@@ -1554,6 +1580,7 @@
 
      .be-with-us a {
          padding: 14px 15px;
+         padding-bottom: 0;
          width: 100%;
          font-style: normal;
          font-weight: 500;
@@ -1744,6 +1771,10 @@
          font-size: 12px;
          line-height: 103.34%;
          color: var(--Gray-Chateau);
+     }
+
+     .about__hack .just-validate-error-label {
+         top: -13px;
      }
 
  }
